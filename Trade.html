@@ -5,10 +5,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./CSS/website.css">
-  <link rel="shortcut icon" href="./images/🇷🇼.jpeg" type="image/x-icon">
+  <link rel="shortcut icon" href="./system/images/WhatsApp Image 2024-05-12 at 21.51.51_09ba8a5f.jpg" type="image/x-icon">
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   <script src="https://kit.fontawesome.com/14ff3ea278.js" crossorigin="anonymous"></script>
+  <script src=".jsfile.js"></script>
   <title>TRADE AGREEMENT</title>
 </head>
 <body>
@@ -17,18 +18,18 @@
         <nav>
           <ul>
             <li><a href="index.html" >HOME</a></li>
-            <li><a>EXPORTS ▼</a>
-              <ul class="dropdown" 🔽 >
-                <li><a href="exporters.html">EXPORTERS</a></li>
-                <li><a href="market-analysis.html">MARKET ANALYSIS</a></li>
-                <li><a href="crops-market.html">CROPS MARKET REPORT</a></li>
-                <li><a href="products.html">PRODUCTS</a></li>
-                <li><a href="country-export-requirement.html">COUNTRY EXPORT</a></li>
+            <li><a id="exportsDropdown">EXPORTS ▼</a>
+              <ul id="exportsMenu" class="dropdown">
+                  <li><a href="exporters.html">LIST OF EXPORTERS</a></li>
+                  <li><a href="market-analysis.html">MARKET ENTRY ANALYSIS</a></li>
+                  <li><a href="crops-market.html">CROPS MARKET REPORT</a></li>
+                  <li><a href="products.html">PRODUCTS</a></li>
+                  <li><a href="country-export-requirement.html">COUNTRY EXPORT REQUIREMENTS</a></li>
               </ul>
-            </li>
-            <li><a>SERVICES ▼</a>
-              <ul class="dropdown">
-                <li><a href="competitor.html">COMPETITOR</a></li>
+          </li>
+            <li><a id="serviceDropdown">SERVICES ▼</a>
+              <ul id="serviceMenu" class="dropdown">
+                <li><a href="competitor.html">COMPETITOR ANALYSIS</a></li>
                 <li><a href="customer.html">CONSUMER BEHAVIOR</a></li>
                 <li><a href="Trade.html">TRADE AGREEMENT</a></li>
                 <li><a href="other-market-reports.html">CROPS MARKET REPORT</a></li>
@@ -38,10 +39,10 @@
             <li><a href="./system/blogger.php">BLOGS & REVIEWS</a></li>
             <div class="graifte">
               <button class="button-focus">
-                <a href="./system/loginadmin.php">ADMIN LOGIN</a>
+                <a href="./system/loginadmin.php">ADMIN</a>
               </button>
               <button class="button-focus">
-                <a href="./system/registrationadmin.php">CREATE AN ACCOUNT</a>
+                <a href="./system/loginuser.php">USERS</a>
               </button></div>
           </ul>
         </nav>
@@ -79,6 +80,7 @@
         <a href=""><i class="fa-brands fa-twitter"></i></a>
         <a href=""><i class="fa-brands fa-youtube"></i></a>
         <a href=""><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://chat.whatsapp.com/JRji0eELly437QYwFFUFjd"><i class="fa-brands fa-whatsapp"></i></a>
       </div>
       <div class="footernav">
         <ul>

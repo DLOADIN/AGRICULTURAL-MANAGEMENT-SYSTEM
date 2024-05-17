@@ -16,7 +16,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./CSS/newfriend.css">
   <link rel="stylesheet" href="./CSS/another-one.css">
-  <link rel="shortcut icon" href="../images/🇷🇼.jpeg" type="image/x-icon">
+  <link rel="shortcut icon" href="./images/WhatsApp Image 2024-05-12 at 21.51.51_09ba8a5f.jpg" type="image/x-icon">
   <script src="https://kit.fontawesome.com/14ff3ea278.js" crossorigin="anonymous"></script><link rel="shortcut icon" href="../images/🇷🇼.jpeg" type="image/x-icon">
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script src="../JS/js.js"></script>
@@ -57,13 +57,19 @@
           </a>
         </li>
         <li>
+          <a href="view-user.php">
+          <i class="fa-solid fa-user"></i>
+            <span>USERS</span>
+          </a>
+        </li>
+        <li>
           <a href="profile.php">
             <i class="fa-solid fa-gear"></i>
             <span>ADMIN SETTINGS</span>
           </a>
         </li>
         <li>
-        <a href="../index.html">
+        <a href="index.html">
           <i class="fa-solid fa-globe"></i>
             <span>HOME</span>
           </a>
@@ -112,12 +118,14 @@
           ?>
         <form action="" method="post" class="form-form">
           <div class="formation-1">
-          <label for="">NAMES</label>
-          <input type="text" name="u_name" id="" value="<?php echo $row['u_name']?>" required>
-          <label for="">TYPE</label>
-          <input type="text" name="u_type" id="" value="<?php echo $row['u_type']?>" required>
-          <label for="">PRICE</label>
-          <input type="number" name="u_price" id="" value="<?php echo $row['u_price']?>" required>
+          <label for="">FOOD NAME</label>
+          <input type="text" name="u_name" id="" value="<?php echo $row['u_name']?>" placeholder="YOUR NAMES" required>
+          <label for="">EXPORT VOLUME</label>
+          <input type="text" name="u_type" id="" value="<?php echo $row['u_type']?>" placeholder="WHATS THE TYPE" required>
+          <label for="">EXPORT REVENUE</label>
+          <input type="text" name="u_revenue" id="" placeholder="WHATS THE REVENUE" value="<?php echo $row['u_revenue']?>" required>
+          <label for="">AVERAGE PRICE</label>
+          <input type="number" name="u_price" id="" placeholder="PRICE" value="<?php echo $row['u_price']?>" required>
           <label for="">Today's Date</label>
           <input type="text" name="u_date" value="<?php echo $row['u_date']?>" read-only>
         </div>
@@ -141,9 +149,10 @@ if(isset($_POST['submit'])){
   $u_name=$_POST['u_name'];
 $u_type=$_POST['u_type'];
 $u_price=$_POST['u_price'];
+$u_revenue=$_POST['u_revenue'];
 $u_date=date('Y-m-d',strtotime($_POST['u_date']));
 
-$sql=mysqli_query($con,"UPDATE `foods` SET u_name='$u_name', u_type='$u_type', u_price='$u_price', u_date='$u_date' WHERE id='$id' ");
+$sql=mysqli_query($con,"UPDATE `foods` SET u_name='$u_name', u_type='$u_type', u_price='$u_price', u_revenue='$u_revenue', u_date='$u_date' WHERE id='$id' ");
 
 if($sql){
   echo "<script>alert('Saved the records successfully')</script>";

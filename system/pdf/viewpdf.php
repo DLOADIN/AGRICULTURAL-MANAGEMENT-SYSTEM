@@ -11,13 +11,14 @@
     $number++ => 'ID',
     'u_name' => 'FOOD NAME',
     'u_type' => 'TYPE',
+    'u_revenue' => 'REVENUE',
     'u_price' => 'PRICE',
     'u_date' => 'DATE',
     // Add more as needed
 );
 
 $con=mysqli_connect('localhost','root','','agriculture');
-$sql=mysqli_query($con," SELECT u_name, u_type, u_price, u_date FROM `foods`");
+$sql=mysqli_query($con," SELECT u_name, u_type, u_revenue, u_price, u_date FROM `foods`");
 $tableName = "ALL FOOD REPORT";
 
 // Set font

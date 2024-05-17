@@ -12,7 +12,7 @@ body{
   font-family: "Space Grotesk", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  color: rgba(22, 236, 22, 0.747);
+  color: #33622B;
 }
 
 .grided{
@@ -43,7 +43,7 @@ body{
 
 .mr-crabs{
   text-align: center;
-  color: rgba(22, 236, 22, 0.747);
+  color: #33622B;
 }
 
 .div{
@@ -79,7 +79,7 @@ form{
 }
 .text-1 h1{
   font-size: 50px;
-  color: rgba(22, 236, 22, 0.747);
+  color: #33622B;
 }
 
 .mr-crabs p{
@@ -115,7 +115,7 @@ a{
   font-weight: 800;
 }
 .text-1 p{
-  color:rgba(22, 236, 22, 0.747);;
+  color:#33622B;
   font-weight: bold;
 }
 .btn-2:hover{
@@ -127,7 +127,7 @@ a{
   width:70vh;
   height: 60px;
   border: none;
-  background-color:rgba(22, 236, 22, 0.747);
+  background-color:#33622B;
   border: 3px solid #fff;
   color: aliceblue;
   cursor: pointer;
@@ -169,7 +169,7 @@ form{
   left: 20px;
   font-family: "Space Grotesk", sans-serif;
   transform: translateY(-70%);
-  color:rgba(22, 236, 22, 0.747);
+  color:#33622B;
   font-size: 16px;
   pointer-events: none;
   transition: 0.5s;
@@ -194,7 +194,7 @@ input:checked {
 }
 
 .heading-3 a{
-  color: rgba(22, 236, 22, 0.747);
+  color: #33622B;
   text-decoration:underline;
 }
 
@@ -202,7 +202,7 @@ input:checked {
   .pooh-shiesty h1{
     padding: 4rem;
     font-size: 30px;
-    color: rgba(22, 236, 22, 0.747);
+    color: #33622B;
     padding-right: 12rem;
   }
 }

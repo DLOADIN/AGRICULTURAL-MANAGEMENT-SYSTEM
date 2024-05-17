@@ -9,12 +9,11 @@ body{
   font-family: Arial, Helvetica, sans-serif;
 }
 .flask{
-  background-image: url('../images/pexels-flambo-388007-1112080.jpg');
+  background-image: url('../images/');
   background-position: center;
   background-attachment:initial;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 76vh;
 }
 
 .flasks{
@@ -26,7 +25,7 @@ body{
   height: 76vh;
 }
 .flaskss{
-  background-image: url('../images/pexels-pixabay-51947.jpg');
+  background-image: url('../system/images/WhatsApp Image 2024-05-12 at 21.51.27_2d665f84.jpg');
   background-position: center;
   background-attachment:initial;
   background-repeat: no-repeat;
@@ -42,7 +41,7 @@ body{
   height: 76vh;
 }
 .flask-2{
-  background-image: url('../images/pexels-tomfisk-1595104.jpg');
+  background-image: url('../system/images/WhatsApp Image 2024-05-12 at 21.50.30_9f4362d1.jpg');
   background-position: center;
   background-attachment:initial;
   background-repeat: no-repeat;
@@ -66,7 +65,7 @@ body{
   height: 76vh;
 }
 .flasks-5{
-  background-image: url('../images/pexels-bradleyhook-142882.jpg');
+  background-image: url('../system/images/WhatsApp Image 2024-05-12 at 21.51.35_c93a09bf.jpg');
   background-position: center;
   background-attachment:initial;
   background-repeat: no-repeat;
@@ -74,7 +73,7 @@ body{
   height: 76vh;
 }
 .flasks-6{
-  background-image: url('../images/pexels-vladbagacian-1205380.jpg');
+  background-image: url('../system/images/fly-air.jpg');
   background-position: center;
   background-attachment:initial;
   background-repeat: no-repeat;
@@ -82,7 +81,23 @@ body{
   height: 76vh;
 }
 .flasks-7{
-  background-image: url('../images/pexels-timmossholder-974314.jpg');
+  background-image: url('../system/images/WhatsApp Image 2024-05-12 at 21.51.30_9d20e473.jpg');
+  background-position: center;
+  background-attachment:initial;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 76vh;
+}
+.flasks-78{
+  background-image: url('../system/images/WhatsApp Image 2024-05-12 at 21.51.49_b6a49150.jpg');
+  background-position: center;
+  background-attachment:initial;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 76vh;
+}
+.flusk-12{
+  background-image: url('../system/images/WhatsApp Image 2024-05-12 at 21.51.29_8aba2289.jpg');
   background-position: center;
   background-attachment:initial;
   background-repeat: no-repeat;
@@ -97,6 +112,7 @@ body{
   justify-content: center;
   justify-items: center;
 }
+
 .flusk .button-focus{
   width: fit-content;
   height: fit-content;
@@ -120,7 +136,7 @@ body{
 
   ul li ul.dropdown li{
     display: block;
-    transition: 10s;
+    transition: 1s;
   }
   ul li ul.dropdown{
     width: 20%;
@@ -128,13 +144,14 @@ body{
     position: absolute;
     z-index: 999;
     display: none;
-    transition: 10s;
+    transition: 1s;
   }
   ul li ul.dropdown li a:hover{
-    color: rgba(22, 236, 22, 0.747);
+    color: 
+    #33622B;
     font-size: 18px;
     text-align: center;
-    transition: 10s;
+    transition: 1s;
   }
   ul li ul.dropdown li a{
     color: white;
@@ -161,10 +178,12 @@ nav ul{
   display: flex;
   margin: 1rem;
   list-style: none;
-  background-color: rgba(22, 236, 22, 0.747);
-  box-shadow: 1px 2px 0px 3px rgba(22, 236, 22, 0.747);;
+  background-color: 
+  #33622B;
+  box-shadow: 1px 2px 0px 3px 
+  #33622B;;
   border-radius: 10px;
-  border: 2px solid rgba(22, 236, 22, 0.747);
+  border: 2px solid #33622B;
 }
 nav ul li {
   margin-top: 4vh;
@@ -277,7 +296,7 @@ nav ul li a{
 }
 
 footer{
-  background-color: rgba(22, 236, 22, 0.747);
+  background-color: #33622B;
 }
 .footer-container{
   width: 100%;
@@ -338,7 +357,7 @@ footer{
 
 
 .footerbottom{
-  background: rgba(22, 236, 22, 0.747);
+  background: #33622B;
   padding: 20px;
   text-align: center;
 }
@@ -383,18 +402,18 @@ footer{
   padding: 1.5rem;
 }
 .granimour1 span{
-  color: rgba(22, 236, 22, 0.747);
+  color: #33622B;
 }
  span{
-  color: rgba(22, 236, 22, 0.747);
+  color: #33622B;
 }
 .granimour1 span{
-  color: rgba(22, 236, 22, 0.747);
+  color: #33622B;
 }
 .yap button{
   padding: 10px 20px;
   border-radius: 12px;
-  background-color: rgba(22, 236, 22, 0.747);
+  background-color: #33622B;
   color: white;
   width: 40vh;
   font-size: 3vh;
@@ -403,7 +422,7 @@ footer{
   font-size: 25px;
 }
 .yap span{
-  color: rgba(22, 236, 22, 0.747);
+  color: #33622B;
   text-align: left;
 }
 .yap p{
@@ -421,7 +440,7 @@ footer{
 }
 
 .button-bu{
-  background-color: rgba(22, 236, 22, 0.747);
+  background-color: #33622B;
   color: aliceblue;
   border-radius: 12px;
   padding: 10px 20px;
@@ -453,7 +472,7 @@ footer{
 
 .granimour1 h3{
   text-align: center;
-  background-color: rgba(22, 236, 22, 0.747) ;;
+  background-color: #33622B;
   color: white;
   border-radius: 13px;
   padding: 5px 10px;
@@ -464,6 +483,12 @@ footer{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
+
+
+#social-media-icon i{
+  font-size: 23px;
+}
+
 #card{
   background-color: rgba(197, 253, 67, 0.959);
   box-shadow: 10px 5px 5px black;
@@ -491,7 +516,7 @@ footer{
 }
 
 .gratitu{
-  background-color: rgba(22, 236, 22, 0.747);
+  background-color: #33622B;
   border-top-left-radius: 15px ;
   border-bottom-left-radius: 15px ;
 }

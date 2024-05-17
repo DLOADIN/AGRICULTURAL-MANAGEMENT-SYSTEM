@@ -5,45 +5,30 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./CSS/website.css">
-  <link rel="shortcut icon" href="./images/🇷🇼.jpeg" type="image/x-icon">
+  <link rel="shortcut icon" href="./system/images/WhatsApp Image 2024-05-12 at 21.51.51_09ba8a5f.jpg" type="image/x-icon">
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   <script src="https://kit.fontawesome.com/14ff3ea278.js" crossorigin="anonymous"></script>
   <script src="./JS/js.js"></script>
+  <script src=".jsfile.js"></script>
   <title>CONTACT US</title>
 </head>
 <body>
-  <div class="flasks-7">
+  <div class="flasks-78">
       <div class="flusk">
         <nav>
           <ul>
             <li><a href="index.html" >HOME</a></li>
-            <li><a>EXPORTS ▼</a>
-              <ul class="dropdown" 🔽 >
-                <li><a href="exporters.html">EXPORTERS</a></li>
-                <li><a href="market-analysis.html">MARKET ANALYSIS</a></li>
-                <li><a href="crops-market.html">CROPS MARKET REPORT</a></li>
-                <li><a href="products.html">PRODUCTS</a></li>
-                <li><a href="country-export-requirement.html">COUNTRY EXPORT</a></li>
-              </ul>
-            </li>
-            <li><a>SERVICES ▼</a>
-              <ul class="dropdown">
-                <li><a href="competitor.html">COMPETITOR</a></li>
-                <li><a href="customer.html">CONSUMER BEHAVIOR</a></li>
-                <li><a href="Trade.html">TRADE AGREEMENT</a></li>
-                <li><a href="other-market-reports.html">CROPS MARKET REPORT</a></li>
-              </ul>
-            </li>
             <li><a href="contact-us.html">CONTACT US</a></li>
             <li><a href="./system/blogger.php">BLOGS & REVIEWS</a></li>
             <div class="graifte">
-            <button class="button-focus">
-              <a href="./system/loginadmin.php">ADMIN LOGIN</a>
-            </button>
-            <button class="button-focus">
-              <a href="./system/registrationadmin.php">CREATE AN ACCOUNT</a>
-            </button></div>
+              <button class="button-focus">
+                <a href="./system/loginadmin.php">ADMIN</a>
+              </button>
+              <button class="button-focus">
+                <a href="./system/loginuser.php">USERS</a>
+              </button></div>
+              <li><a id="social-media-icon" href="https://chat.whatsapp.com/JRji0eELly437QYwFFUFjd"><i class="fa-brands fa-whatsapp"></i></a></li>
           </ul>
         </nav>
       </div>
@@ -54,18 +39,18 @@
       }
       input{
         padding: 2rem;
-        border-top: 2px solid rgba(22, 236, 22, 0.747);
-        border-bottom: 2px solid rgba(22, 236, 22, 0.747);
-        border-left: 5px solid rgba(22, 236, 22, 0.747);
-        border-right: 5px solid rgba(22, 236, 22, 0.747);
+        border-top: 2px solid #33622B;
+        border-bottom: 2px solid #33622B;
+        border-left: 5px solid #33622B;
+        border-right: 5px solid #33622B;
         border-radius: 15px;
       }
       textarea{
         padding: 2rem;
-        border-top: 2px solid rgba(22, 236, 22, 0.747);;
-        border-bottom: 2px solid rgba(22, 236, 22, 0.747);;
-        border-left: 5px solid rgba(22, 236, 22, 0.747);
-        border-right: 5px solid rgba(22, 236, 22, 0.747);
+        border-top: 2px solid #33622B;
+        border-bottom: 2px solid #33622B;
+        border-left: 5px solid #33622B;
+        border-right: 5px solid #33622B;
         border-radius: 15px;
       }
       label{
@@ -79,7 +64,7 @@
         width: 100%;
         padding: 10px 25px;
         border-radius: 16px;
-        background:rgba(22, 236, 22, 0.747);
+        background:#33622B;
         margin-top: 2%;
         color: aliceblue;
         font-size: 1rem;
@@ -92,7 +77,7 @@
     </style>
     <div class="seven-dollar1">
       <h1>CONTACT US</h1>
-          <form action="https://formsubmit.co/6a486973392a74f940135d0c4f3cd839" method="POST">
+          <form action="https://formsubmit.co/manzidavion@gmail.com" method="POST">
           <label for="">FULL NAMES</label>
           <input type="text" name="name" placeholder="ENTER YOUR NAME">
           <label for="">EMAIL</label>
@@ -111,6 +96,7 @@
         <a href=""><i class="fa-brands fa-twitter"></i></a>
         <a href=""><i class="fa-brands fa-youtube"></i></a>
         <a href=""><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://chat.whatsapp.com/JRji0eELly437QYwFFUFjd"><i class="fa-brands fa-whatsapp"></i></a>
       </div>
       <div class="footernav">
         <ul>
@@ -126,3 +112,29 @@
     </div></footer>
 </body>
 </html>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var exportsDropdown = document.getElementById("exportsDropdown");
+    var exportsMenu = document.getElementById("exportsMenu");
+
+    exportsDropdown.addEventListener("click", function() {
+        if (exportsMenu.style.display === "block") {
+            exportsMenu.style.display = "none";
+        } else {
+            exportsMenu.style.display = "block";
+        }
+    });
+});
+  document.addEventListener("DOMContentLoaded", function() {
+    var exportsDropdown = document.getElementById("serviceDropdown");
+    var exportsMenu = document.getElementById("serviceMenu");
+
+    exportsDropdown.addEventListener("click", function() {
+        if (exportsMenu.style.display === "block") {
+            exportsMenu.style.display = "none";
+        } else {
+            exportsMenu.style.display = "block";
+        }
+    });
+});
+</script>

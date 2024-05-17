@@ -16,7 +16,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./CSS/newfriend.css">
   <link rel="stylesheet" href="./CSS/another-one.css">
-  <link rel="shortcut icon" href="../images/🇷🇼.jpeg" type="image/x-icon">
+  <link rel="shortcut icon" href="./images/WhatsApp Image 2024-05-12 at 21.51.51_09ba8a5f.jpg" type="image/x-icon">
   <script src="https://kit.fontawesome.com/14ff3ea278.js" crossorigin="anonymous"></script><link rel="shortcut icon" href="../images/🇷🇼.jpeg" type="image/x-icon">
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script src="../JS/js.js"></script>
@@ -57,13 +57,19 @@
           </a>
         </li>
         <li>
+          <a href="view-user.php">
+          <i class="fa-solid fa-user"></i>
+            <span>USERS</span>
+          </a>
+        </li>
+        <li>
           <a href="profile.php">
             <i class="fa-solid fa-gear"></i>
             <span>ADMIN SETTINGS</span>
           </a>
         </li>
         <li>
-          <a href="../index.html">
+          <a href="index.html">
           <i class="fa-solid fa-globe"></i>
             <span>HOME</span>
           </a>
@@ -107,8 +113,9 @@
         <table><tr>
             <th>ID</th>
             <th>FOOD NAME</th>
-            <th>TYPE</th>
-            <th>PRICE</th>
+            <th>EXPORT VOLUME</th>
+            <th>EXPORT REVENUE</th>
+            <th>AVERAGE PRICE</th>
             <th>DATE</th>
             <th>UPDATE</th>
             <th>DELETE</th>
@@ -128,6 +135,7 @@
             <td><?php echo $number;?></td>
             <td><?php echo $row['u_name']?></td>
             <td><?php echo $row['u_type']?></td>
+            <td><?php echo $row['u_revenue']?></td>
             <td><?php echo $row['u_price']?></td>
             <td><?php echo $row['u_date']?></td>
             <td>
@@ -169,7 +177,7 @@
     opacity:1890%
   }
   #abtni-1{
-  background: rgba(22, 236, 22, 0.747);
+  background: #33622B;
   width:fit-content;
   height:fit-content;
   padding:15px 50px;
@@ -185,7 +193,7 @@
 
 .lebutton a{
   text-decoration: none;
-  color:rgba(22, 236, 22, 0.747);
+  color:#33622B;
 
 }
 .lebutton {

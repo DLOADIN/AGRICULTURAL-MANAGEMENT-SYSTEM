@@ -34,7 +34,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../CSS/website.css">
-  <link rel="shortcut icon" href="../images/🇷🇼.jpeg" type="image/x-icon">
+  <link rel="shortcut icon" href="./images/WhatsApp Image 2024-05-12 at 21.51.51_09ba8a5f.jpg" type="image/x-icon">
   <script src="../JS/js.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -56,7 +56,7 @@
   transition: .7s all ease ;
 }
 .haey button{
-  background: rgba(22, 236, 22, 0.747);
+  background: #33622B;
   padding: 14px 28px;
   border-radius: 14px;
   color: white;
@@ -69,7 +69,7 @@
   text-decoration: none;
 }
 .les-button{
-  background: rgba(22, 236, 22, 0.747);
+  background: #33622B;
   padding: 14px 28px;
   border-radius: 14px;
   color: white;
@@ -92,7 +92,7 @@
         width: 80%;
         padding: 5px;
         margin: 15px auto;
-        border: 1px solid rgba(22, 236, 22, 0.747);
+        border: 1px solid #33622B;
         border-radius: 12px;
    }
    #img_div:after{
@@ -102,8 +102,8 @@
    }
    img{
         margin: 5px;
-        width: 300px;
-        height: 270px;
+        width: 100px;
+        height: 100px;
         border-radius: 50%;
    }
    textarea{
@@ -113,7 +113,7 @@
       border: 2px solid black;
       width:80%
    }p{
-    font-size:30px;
+    font-size:33px;
       font-weight:bold;
       font-style: italic;
       font-family: Arial, Helvetica, sans-serif;
@@ -130,33 +130,17 @@
       <div class="flusk">
         <nav>
           <ul>
-            <li><a href="../index.html" >HOME</a></li>
-            <li><a>EXPORTS ▼</a>
-              <ul class="dropdown" 🔽 >
-                <li><a href="../exporters.html">EXPORTERS</a></li>
-                <li><a href="../market-analysis.html">MARKET ANALYSIS</a></li>
-                <li><a href="../crops-market.html">CROPS MARKET REPORT</a></li>
-                <li><a href="../products.html">PRODUCTS</a></li>
-                <li><a href="../country-export-requirement.html">COUNTRY EXPORT</a></li>
-              </ul>
-            </li>
-            <li><a>SERVICES ▼</a>
-              <ul class="dropdown">
-                <li><a href="../competitor.html">COMPETITOR</a></li>
-                <li><a href="../customer.html">CONSUMER BEHAVIOR</a></li>
-                <li><a href="../Trade.html">TRADE AGREEMENT</a></li>
-                <li><a href="../other-market-reports.html">CROPS MARKET REPORT</a></li>
-              </ul>
-            </li>
-            <li><a href="../contact-us.html">CONTACT US</a></li>
-            <li><a href="blog.php">BLOGS & REVIEWS</a></li>
+          <li><a href="../index.html" >HOME</a></li>
+          <li><a href="../contact-us.html">CONTACT US</a></li>
+          <li><a href="blogger.php">BLOGS & REVIEWS</a></li>
             <div class="graifte">
               <button class="button-focus">
-                <a href="./system/loginadmin.php">ADMIN LOGIN</a>
+                <a href="./loginadmin.php">ADMIN</a>
               </button>
               <button class="button-focus">
-                <a href="./system/registrationadmin.php">CREATE AN ACCOUNT</a>
-              </button></div>
+                <a href="./loginuser.php">USERS</a>
+              </button> </div>
+              <li><a id="social-media-icon" href="https://chat.whatsapp.com/JRji0eELly437QYwFFUFjd"><i class="fa-brands fa-whatsapp"></i></a></li>
           </ul>
         </nav>
       </div>
@@ -181,14 +165,14 @@
       <form method="POST" action="" enctype="multipart/form-data" id="form">
             <input type="hidden" name="size" value="1000000">
             <div>
-              <input type="text" name="title">
+              <input type="text" name="image_text">
             </div>
             <div>
               <input type="file" name="image">
             </div>
             <div>
           <textarea 
-            id="text"  cols="40"  rows="4"   name="image_text" placeholder="Say something about us..."></textarea>
+            id="text"  cols="40"  rows="4"   name="title" placeholder="Say something about us..."></textarea>
             </div>
             <div><button type="submit" name="upload" class="les-button">POST</button>
             </div>
@@ -206,26 +190,9 @@
       <div class="footernav">
         <nav></nav>
         <ul>
-          <li><a href="../index.html" >HOME</a></li>
-          <li><a>EXPORTS ▼</a>
-            <ul class="dropdown" 🔽 >
-              <li><a href="../exporters.html">EXPORTERS</a></li>
-              <li><a href="../market-analysis.html">MARKET ANALYSIS</a></li>
-              <li><a href="../crops-market.html">CROPS MARKET REPORT</a></li>
-              <li><a href="../products.html">PRODUCTS</a></li>
-              <li><a href="../country-export-requirement.html">COUNTRY EXPORT</a></li>
-            </ul>
-          </li>
-          <li><a>SERVICES ▼</a>
-            <ul class="dropdown">
-              <li><a href="../competitor.html">COMPETITOR</a></li>
-              <li><a href="../customer.html">CONSUMER BEHAVIOR</a></li>
-              <li><a href="../Trade.html">TRADE AGREEMENT</a></li>
-              <li><a href="../other-market-reports.html">CROPS MARKET REPORT</a></li>
-            </ul>
-          </li>
-          <li><a href="../contact-us.html">CONTACT US</a></li>
-          <li><a href="blog.php">BLOGS & REVIEWS</a></li>
+        <li><a href="index.html">HOME</a></li>
+          <li><a href="blogger.php">BLOGS & REVIEWS</a></li>
+            <li><a href="contact-us.html">CONTACT US</a></li>
           <div class="graifte"></div>
         </ul>
       </div>
