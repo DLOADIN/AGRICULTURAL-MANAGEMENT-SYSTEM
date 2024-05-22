@@ -1,12 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Signika:wght@300..700&family=Space+Grotesk:wght@300..700&display=swap');
 *{
   margin:0;
   padding:0;
   box-sizing: border-box;
   border:none;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
 }
 body{
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
 }
 .flask{
   background-image: url('../images/');
@@ -490,11 +501,12 @@ footer{
 }
 
 #card{
-  background-color: rgba(197, 253, 67, 0.959);
+  background-color: #33622B;
   box-shadow: 10px 5px 5px black;
   padding:3rem;
   border-radius: 13px;
   margin: 20px 1vw;
+  color:aliceblue;
 }
 
 .lao{

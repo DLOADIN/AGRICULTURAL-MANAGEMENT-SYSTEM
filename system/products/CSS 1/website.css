@@ -488,10 +488,11 @@ footer{
   grid-template-columns: 1fr 1fr 1fr;
 }
 #card{
-  background-color: rgba(197, 253, 67, 0.959);
+  background-color: #33622B;
   box-shadow: 10px 5px 5px black;
   padding:3rem;
   border-radius: 13px;
+  color:aliceblue;
   margin: 20px 1vw;
 }
 

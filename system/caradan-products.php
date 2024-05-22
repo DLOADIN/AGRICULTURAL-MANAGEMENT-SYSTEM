@@ -16,6 +16,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./CSS/newfriend.css">
   <link rel="stylesheet" href="./CSS/another-one.css">
+  
   <link rel="shortcut icon" href="./images/WhatsApp Image 2024-05-12 at 21.51.51_09ba8a5f.jpg" type="image/x-icon">
   <script src="https://kit.fontawesome.com/14ff3ea278.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -143,15 +144,14 @@
           <div class="fortitude">
               <div class="cardido">
           <h1>WEEKLY REPORT</h1>
-          <?php
+      <?php
 // Assuming $con is your database connection
 
 // Select distinct weeks and years from the database
-$weeksQuery = mysqli_query($con, "SELECT DISTINCT WEEK(u_date) as week, YEAR(u_date) as year FROM `foods` ORDER BY year DESC, week DESC");
+$weeksQuery = mysqli_query($con, "SELECT DISTINCT WEEK(u_date, 1) as week, YEAR(u_date) as year FROM `foods` ORDER BY year DESC, week DESC");
 
 // Initialize variables for grouping
 $currentWeek = null;
-
 ?>
     <?php
     // Iterate over the weeks
@@ -160,35 +160,40 @@ $currentWeek = null;
         $week = $weekRow['week'];
         $year = $weekRow['year'];
 
-        // Select records for the current week and year
-        $recordsQuery = mysqli_query($con, "SELECT * FROM `foods` WHERE WEEK(u_date) = $week AND YEAR(u_date) = $year ORDER BY u_date DESC");
+        // Calculate the start and end date of the week
+        $startDate = new DateTime();
+        $startDate->setISODate($year, $week);
+        $endDate = clone $startDate;
+        $endDate->modify('+6 days');
 
-        // If records exist for the week, display them
-        if (mysqli_num_rows($recordsQuery) > 0) {
-            // Display title for the week
-            echo '<h2 class="caradan-h1">Week ' . sprintf('%02d', $week) . ', ' . date('d M Y', strtotime('first day of this week', strtotime($year . '-W' . sprintf('%02d', $week)))) . ' - ' . date('d M Y', strtotime('last day of this week', strtotime($year . '-W' . sprintf('%02d', $week)))) . '</h2>';
-            // Open container for the week
-            echo '<div class="caradan">';
-            
-            // Iterate over the records
-            while ($row = mysqli_fetch_array($recordsQuery)) {
-                ?>
-                <div id="caradan-city">
-                    <h1><?php echo $row['u_name']?></h1>
-                    <h3>EXPORT VOLUME: <?php echo $row['u_type']?></h3>
-                    <h3>EXPORT REVENUE:<?php echo $row['u_revenue']?></h3>
-                    <h3>TOTAL PRICE: <?php echo $row['u_price']?></h3>
-                    <h4>Recorded Date: <?php echo $row['u_date']?></h4>
-                </div>
-                <?php
-            }
-            
-            // Close the container for the week
-            echo '</div>';
-        } else {
-            // If no records exist for the week, display a message
-            echo '<h2>No records found for Week ' . sprintf('%02d', $week) . ', ' . date('d M Y', strtotime('first day of this week', strtotime($year . '-W' . sprintf('%02d', $week)))) . ' - ' . date('d M Y', strtotime('last day of this week', strtotime($year . '-W' . sprintf('%02d', $week)))) . '</h2>';
+        // Format the start and end date
+        $formattedStartDate = $startDate->format('M j');
+        $formattedEndDate = $endDate->format('M j Y');
+
+        // Select records for the current week and year
+        $recordsQuery = mysqli_query($con, "SELECT * FROM `foods` WHERE WEEK(u_date, 1) = $week AND YEAR(u_date) = $year ORDER BY u_date DESC");
+
+        // Display title for the week
+        echo '<h2 class="caradan-h1">Week ' . sprintf('%02d', $week) . ', ' . $formattedStartDate . ' - ' . $formattedEndDate . '</h2>';
+        
+        // Open container for the week
+        echo '<div class="caradan">';
+
+        // Iterate over the records
+        while ($row = mysqli_fetch_array($recordsQuery)) {
+            ?>
+            <div id="caradan-city">
+                <h1><?php echo $row['u_name']?></h1>
+                <h3>EXPORT VOLUME: <?php echo $row['u_type']?></h3>
+                <h3>EXPORT REVENUE: <?php echo $row['u_revenue']?></h3>
+                <h3>TOTAL PRICE: <?php echo $row['u_price']?></h3>
+                <h4>Recorded Date: <?php echo $row['u_date']?></h4>
+            </div>
+            <?php
         }
+        
+        // Close the container for the week
+        echo '</div>';
     }
     ?>
 </div>

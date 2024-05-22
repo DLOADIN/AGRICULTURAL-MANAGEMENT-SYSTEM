@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="./CSS/newfriend.css">
   <link rel="stylesheet" href="./CSS/another-one.css">
   <link rel="stylesheet" href="./CSS/form.css">
+  
   <link rel="shortcut icon" href="./images/WhatsApp Image 2024-05-12 at 21.51.51_09ba8a5f.jpg" type="image/x-icon">
   <script src="https://kit.fontawesome.com/14ff3ea278.js" crossorigin="anonymous"></script><link rel="shortcut icon" href="../images/🇷🇼.jpeg" type="image/x-icon">
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
@@ -100,7 +101,6 @@
           $attorney=$row['u_name'];
           ?>
         <h3 class="my-account-header">
-        <?php echo $attorney?>
           </h3>
         <p>Manager</p></div> 
         <button name="submit" type="submit" class="btn-3" >
